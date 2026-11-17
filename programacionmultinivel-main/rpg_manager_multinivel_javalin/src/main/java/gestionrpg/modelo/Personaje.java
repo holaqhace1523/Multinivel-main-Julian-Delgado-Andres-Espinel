@@ -17,6 +17,20 @@ public abstract class Personaje {
     // >>> SALA 1.1 · Personaje: la clase base
     // Arma este bloque en el Edificio de la Persistencia (pestaña Java),
     // pulsa «Copiar bloque» y pégalo entre estas dos marcas.
+    
+    rpg_manager_multinivel_javalin/src/main/java/gestionrpg/modelo/Personaje.java (fragmento)
+    protected Personaje(Integer id, String nombre, int nivel, int vida, int ataque, BigDecimal oro) {
+        this.id = id;
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.vida = vida;
+        this.ataque = ataque;
+        this.oro = oro;
+    }
+
+    /** "Guerrero", "Mago" o "Arquero": lo define cada subclase. */
+    public abstract String getClase();
+    
     // <<< FIN SALA 1.1
     }
 
